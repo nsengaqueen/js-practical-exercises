@@ -10,6 +10,7 @@ function ReverseWord(sentence) {
   for (let i = 1; i < Newsentence.length; i++) {
     if (longestword.length < Newsentence[i].length) {
       longestword = Newsentence[i];
+      longestword = longestword.split("").reverse().join("");
       longestword = longestword[0].toUpperCase() + longestword.slice(1);
     }
   }
@@ -17,3 +18,6 @@ function ReverseWord(sentence) {
 }
 let sentence = "the question he sent wa ambigous ";
 console.log(ReverseWord(sentence));
+
+
+
